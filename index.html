@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 page Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="btn">GOTO HOME</button>
+
+    <div class="main">
+        <div class="glitch">
+            <div class="text">PAGE NOT FOUND</div>
+        </div>
+    </div>
+
+    <script src="resources/jquery-3.6.0.js"></script>
+    <script src="mgGlitch.js"></script>
+
+
+    <script>
+        $(function(){
+                $('.glitch').mgGlitch({
+                    destroy: false,
+                    glitch: true,
+                    scale: true,
+                    blend: true,
+                    blengModeType: 'hue',
+                    glitchTimeMin: 100,
+                    glitchTimeMax: 200,
+                    glitch2TimeMin: 10,
+                    glitch2TimeMax: 200,
+                });
+        });
+    </script>
+</body>
+</html>
